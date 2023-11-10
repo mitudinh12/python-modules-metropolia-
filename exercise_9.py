@@ -90,4 +90,4 @@ def main_program_task_4():
     race1.print_status()
 
 
-main_program_task_4()
+
