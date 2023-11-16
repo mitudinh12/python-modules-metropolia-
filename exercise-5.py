@@ -21,8 +21,7 @@ def task_2():
 #5.3
 def task_3():
     number = int(input("Give a number: "))
-    number_to_compare = number + 1
-    for i in range(2, number_to_compare):
+    for i in range(2, number + 1):
         if number % i == 0 and i != number:
             print("Not a prime number")
             break
