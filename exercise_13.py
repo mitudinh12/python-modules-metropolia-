@@ -34,15 +34,6 @@ connection = mysql.connector.connect(
     autocommit=True
 )
 def task_2():
-    connection = mysql.connector.connect(
-        host='127.0.0.1',
-        port=3306,
-        database='flight_game',
-        user='dbuser',
-        password='pass_word',
-        autocommit=True
-    )
-
     def get_airport(icao_code):  # get airport name and location by ICAO code
         sql = f"SELECT name, municipality FROM airport WHERE ident= '{icao_code}';"
         cursor = connection.cursor()
